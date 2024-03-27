@@ -1,0 +1,28 @@
+#include <stdio.h> 
+#define STUDENT 10 //2«–≥‚ 1π›¿« «–ª˝ºˆ ¿‘∑¬
+int main(void)
+{
+	int student;
+	int score[STUDENT] = { 90, 100, 95, 60, 70, 50, 20, 100, 98, 100 }; //∞¢ «–ª˝¿« ¡°ºˆ ¿‘∑¬
+	int i;
+	int sum = 0;
+	float average;
+
+	printf("2«–≥‚ 1π›¿« «–ª˝¿∫ ∏Ó∏Ì¿‘¥œ±Ó? : ");
+	scanf_s("%d", &student);
+
+
+	for (i = 0; i <= student-1; ++i) 
+	{
+		printf("%dπ¯¬∞ «–ª˝¿« ¡°ºˆ = %d\n",i+1, score[i]);  //«–ª˝ º¯º≠¥Î∑Œ ¡°ºˆ √‚∑¬
+	}
+
+	for (i = 0; i <= student - 1; ++i)
+		sum += score[i];                                   //∆Ú±’¿ª ±∏«œ±‚ ¿ß«ÿ √—¡°¿ª ±∏«‘
+
+	printf("---------------------------------------------\n");
+	average = sum / (float)student;                       //√—¡°¿ª «–ª˝ ºˆ∑Œ ≥™¥©æÓ ∆Ú±’ ±∏«‘
+	printf("º∫¿˚ ∆Ú±’ = %4.1f", average);
+
+	return 0;
+}
